@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* header styling */
+header {
+  background-color: #fff;
+  color: #1b2050;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #23b577 5px solid;
+}
+
+header a {
+  color: #1b2050;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  float: left;
+  display: inline;
+  padding: 0 15px 0 15px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding img {
+  margin: auto;
+  width: 100px;
+  height: 50px;
+}
+
+header nav {
+  float: right;
+  padding-top: 13px;
+}
+
+header .current {
+  color: #23b577;
+  font-style: bold;
+}
+
+header a:hover {
+  color: #8f8f8f;
+} /*end of header styling*/
+
+/*Showcase styling*/
+#showcase {
+  min-height: 400px;
+  background: url(../img/Vertical.jpg) no-repeat 0 -300px;
+  text-align: center;
+  color: #1b2050;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 48px;
+}
+
+#showcase p {
+  font-size: 20px;
+  margin-bottom: 30px;
+} /* End Showcase styling*/
+
+/* Newsletter styling*/
+#newsletter {
+  background: #23b577;
+  color: #fff;
+}
+
+#newsletter h1 {
+  float: left;
+  margin: 30px 0 30px 0;
+}
+
+#newsletter form {
+  float: right;
+  margin: 30px 0 30px 0;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 32px;
+  width: 200px;
+  border: none;
+}
+
+#newsletter button {
+  padding: 4px;
+  height: 40px;
+  width: 100px;
+  background: #1b2050;
+  color: #fff;
+  border: none;
+  padding: 0 20px 0 20px;
+}
+
+#newsletter button :hover {
+  background: #292e5c;
+} /* End Newsletter styling*/
+
+/* Boxes styling*/
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  width: 300px;
+  float: left;
+  text-align: center;
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+/* End Boxes styling*/
+
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+aside#sidebar {
+  float: right;
+  width: 30%;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  background: #1b2050;
+  color: #fff;
+}
+
+footer .social a img {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social ul li {
+  margin-top: 10px;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+#service-boxes {
+  margin-top: 20px;
+}
+
+#service-boxes .sbox {
+  width: 300px;
+  float: left;
+  text-align: center;
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 35px;
+  border: #1b2050 5px solid;
+  height: 500px;
+}
+
+#service-boxes .sbox p {
+  padding: 0 10px 0 10px;
+}
+
+#service-boxes .sbox img {
+  width: 270px;
+  filter: grayscale(100%);
+  padding-top: 15px;
+}
+
+#service-boxes .sbox button {
+  padding: 4px;
+  height: 40px;
+  width: 150px;
+  background: #23b577;
+  color: #fff;
+  border: none;
+  padding: 0 20px 0 20px;
+}
+
+#service-boxes .sbox img:hover {
+  width: 290px;
+  filter: none;
+}
+
+@media (max-width: 550px) {
+  header #branding,
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  #newsletter h1,
+  #newsletter form {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
