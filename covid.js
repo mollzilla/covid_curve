@@ -9,6 +9,7 @@ fetch("https://api.covid19api.com/dayone/country/argentina/status/confirmed")
 let y = data.pop()
 
 yAxis=(y-data[0])/1000;
+
 data=data.map((point, i) => `L${i*4},${(y-point)/1000}`)
 
 return data=[yAxis, data];
