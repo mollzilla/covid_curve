@@ -7,11 +7,21 @@ body {
   background-color: #f4f4f4;
 }
 
+a {
+  color: #23b577;
+  text-decoration: none;
+}
+
 .container {
   width: 80%;
   margin: auto;
   overflow: hidden;
   max-width: 980px;
+}
+
+#logo {
+  height: 25px;
+  width: 25px; 
 }
 
 /* header styling */
@@ -115,14 +125,10 @@ header a:hover {
 } /* End Newsletter styling*/
 
 /* Boxes styling*/
-#boxes {
-  margin-top: 20px;
-}
 
 #boxes .box {
   text-align: center;
   margin-top: 35px;
-
 }
 
 .svg {

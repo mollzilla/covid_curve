@@ -6,8 +6,6 @@ fetch("https://api.covid19api.com/dayone/country/argentina/status/confirmed")
 .then(data => {
   data=data.map(day => day.Cases);
 
-// por ahora trabajemos con un eje x de 1 px
-
 let y = data.pop()
 data.push(y);
 
