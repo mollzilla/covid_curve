@@ -15,20 +15,20 @@ let points=[];
 console.log(y)
 for (let i = 0; i < data.length-1; i++) {
   const element = data[i];
-  points.push(`L${i*3},${(y-element)/1000}`)
+  points.push(`L${i*4},${(y-element)/1000}`)
 }
 
 return data=[(y-data[0])/1000, points];
 
 }).then( data => {
 svg.setAttribute("href", "http://www.w3.org/1999/xlink");
-svg.setAttribute("width", 500);
-svg.setAttribute("height", 700);
+svg.setAttribute("width", 850);
+svg.setAttribute("height", 750);
 svg.innerHTML=  `<path d="M0,${data[0]} ${data[1]}
   
 " 
   style="stroke: #FF0000;
-  stroke-width: 3;
+  stroke-width: 6;
   fill: none;
   "
 />`
