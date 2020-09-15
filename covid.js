@@ -7,16 +7,11 @@ fetch("https://api.covid19api.com/dayone/country/argentina/status/confirmed")
   data=data.map(day => day.Cases);
 
 let y = data.pop()
-data.push(y);
 
-let points=[];
-console.log(y)
-for (let i = 0; i < data.length-1; i++) {
-  const element = data[i];
-  points.push(`L${i*4},${(y-element)/1000}`)
-}
+yAxis=(y-data[0])/1000;
+data=data.map((point, i) => `L${i*4},${(y-point)/1000}`)
 
-return data=[(y-data[0])/1000, points];
+return data=[yAxis, data];
 
 }).then( data => {
 svg.setAttribute("href", "http://www.w3.org/1999/xlink");
@@ -34,7 +29,6 @@ return svg;
 
 
 }).then(svg => {
-  // console.log(svg)
   document.querySelector(".svg").appendChild(svg);
 })
 
